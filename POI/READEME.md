@@ -22,3 +22,12 @@ Excle版本说明
 4.[添加图片](poi-demo\src\test\java\cn\itcast\poi\test\PoiTest04.java)
 
 5.[读取并解析](poi-demo\src\test\java\cn\itcast\poi\test\PoiTest05.java)
+
+
+
+#### 实例
+
+百万数据的导出与读取
+
+[源码和文件](工具类\big_data_test_file)
+
