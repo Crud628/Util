@@ -52,11 +52,11 @@ public class GeneratorFacade {
              * 调用Generator核心处理类
              */
             Map<String,Object> dataModel = getDataModel(table);
-//
-//            for(Map.Entry<String,Object> entry:dataModel.entrySet()) {
-//                System.out.println(entry.getKey() + "--" + entry.getValue());
-//            }
-//            System.out.println("------------------------");
+
+            for(Map.Entry<String,Object> entry:dataModel.entrySet()) {
+                System.out.println(entry.getKey() + "--" + entry.getValue());
+            }
+            System.out.println("------------------------");
             generator.scanAndGenerator(dataModel);
         }
     }

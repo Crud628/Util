@@ -268,7 +268,7 @@ public class DatabaseUtil extends JFrame {
 					  String username = jTextField1.getText();
 					  String password = jTextField2.getText();
 					  String dbType = (String)jComboBox1.getSelectedItem();
-					  DataBase db = new DataBase(dbType,ip,"3306",dbName);
+					  DataBase db = new DataBase(dbType,ip,"9999",dbName);
 					  db.setUserName(username);
 					  db.setPassWord(password);
 					  CodeUtil codeUtil = new CodeUtil(db,null);
@@ -297,7 +297,7 @@ public class DatabaseUtil extends JFrame {
 					  String username = jTextField1.getText();
 					  String password = jTextField2.getText();
 					  String dbType = (String)jComboBox1.getSelectedItem();
-					  DataBase db = new DataBase(dbType,ip,"3306","");
+					  DataBase db = new DataBase(dbType,ip,"9999","");
 					  db.setUserName(username);
 					  db.setPassWord(password);
 					  List<String> catalogs = DataBaseUtils.getSchemas(db);

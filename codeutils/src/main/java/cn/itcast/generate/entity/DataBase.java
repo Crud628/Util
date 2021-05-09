@@ -5,7 +5,7 @@ package cn.itcast.generate.entity;
 //数据库实体类
 public class DataBase {
                                      //             127.0.0.1：3306/ihrm
-    private static String mysqlUrl = "jdbc:mysql://[ip]:[port]/[db]?useUnicode=true&amp;characterEncoding=UTF8";
+    private static String mysqlUrl = "jdbc:mysql://[ip]:[port]/[db]?useUnicode=true&amp;characterEncoding=UTF8&serverTimezone=UTC";
     private static String oracleUrl = "jdbc:oracle:thin:@[ip]:[port]:[db]";
 
     private String dbType;//数据库类型
@@ -19,11 +19,11 @@ public class DataBase {
     public DataBase() {}
 
     public DataBase(String dbType) {
-        this(dbType,"127.0.0.1","3306","");
+        this(dbType,"127.0.0.1","9999","");
     }
 
     public DataBase(String dbType,String db) {
-        this(dbType,"127.0.0.1","3306",db);
+        this(dbType,"127.0.0.1","9999",db);
     }
 
 

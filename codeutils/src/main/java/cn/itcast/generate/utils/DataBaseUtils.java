@@ -59,7 +59,7 @@ public class DataBaseUtils {
         //2.获取元数据
         DatabaseMetaData metaData = connection.getMetaData();
         //3.获取当前数据库中的所有表
-        ResultSet tables = metaData.getTables(null, null, "pe_permission", new String[]{"TABLE"});
+        ResultSet tables = metaData.getTables(null, null, null, new String[]{"TABLE"});
 
         List<Table> list = new ArrayList<>();
 

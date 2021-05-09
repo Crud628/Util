@@ -17,9 +17,9 @@ public class DataBaseMetaDataTest {
     public void init() throws Exception {
 
         String driver ="com.mysql.jdbc.Driver";
-        String url="jdbc:mysql://127.0.0.1:3306/ihrm?useUnicode=true&characterEncoding=utf8";
+        String url="jdbc:mysql://127.0.0.1:9999/tm?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC";
         String username="root";
-        String password="111111";
+        String password="123456";
 
         Properties props = new Properties();
         props.put("remarksReporting","true");//获取数据库的备注信息
